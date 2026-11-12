@@ -16,6 +16,7 @@ For a new experiment:
 4) Analyse with Analysis.ipynb → concentrations + plots will be saved in Results/
 
 Look for `# CHANGE HERE #` in the notebooks: those are the lines you edit for a new experiment or a new molecule.
+There are currently two different styles for the plot with broken axis, plot styles can be changed in the .py scripts under Input/
 
 ### 1. Add the reaction conditions to `Input/metadata.xlsx`
 
