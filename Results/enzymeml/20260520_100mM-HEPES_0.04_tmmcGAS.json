@@ -1,0 +1,2976 @@
+{
+  "@context": {
+    "@vocab": "http://www.enzymeml.org/v2/",
+    "enzml": "http://www.enzymeml.org/v2/",
+    "OBO": "http://purl.obolibrary.org/obo/",
+    "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+    "qudt": "http://qudt.org/schema/qudt#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "unit": "http://qudt.org/vocab/unit#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Creator": "http://www.enzymeml.org/v2/Creator/",
+    "Vessel": "http://www.enzymeml.org/v2/Vessel/",
+    "Protein": "http://www.enzymeml.org/v2/Protein/",
+    "Complex": "http://www.enzymeml.org/v2/Complex/",
+    "SmallMolecule": "http://www.enzymeml.org/v2/SmallMolecule/",
+    "Reaction": "http://www.enzymeml.org/v2/Reaction/",
+    "Measurement": "http://www.enzymeml.org/v2/Measurement/",
+    "Equation": "http://www.enzymeml.org/v2/Equation/",
+    "Parameter": "http://www.enzymeml.org/v2/Parameter/",
+    "name": "schema:title",
+    "version": "enzml:EnzymeMLDocument/version",
+    "description": "enzml:EnzymeMLDocument/description",
+    "created": "schema:dateCreated",
+    "modified": "schema:dateModified",
+    "creators": {
+      "@id": "schema:creator",
+      "@container": "@list"
+    },
+    "vessels": {
+      "@id": "enzml:EnzymeMLDocument/vessels",
+      "@container": "@list"
+    },
+    "proteins": {
+      "@id": "enzml:EnzymeMLDocument/proteins",
+      "@container": "@list"
+    },
+    "complexes": {
+      "@id": "enzml:EnzymeMLDocument/complexes",
+      "@container": "@list"
+    },
+    "small_molecules": {
+      "@id": "enzml:EnzymeMLDocument/small_molecules",
+      "@container": "@list"
+    },
+    "reactions": {
+      "@id": "enzml:EnzymeMLDocument/reactions",
+      "@container": "@list"
+    },
+    "measurements": {
+      "@id": "enzml:EnzymeMLDocument/measurements",
+      "@container": "@list"
+    },
+    "equations": {
+      "@id": "enzml:EnzymeMLDocument/equations",
+      "@container": "@list"
+    },
+    "parameters": {
+      "@id": "enzml:EnzymeMLDocument/parameters",
+      "@container": "@list"
+    },
+    "references": {
+      "@id": "schema:citation",
+      "@container": "@list"
+    }
+  },
+  "@id": "enzml:EnzymeMLDocument/a6140e58-2ae4-4769-abe0-a8f67884364a",
+  "@type": [
+    "enzml:EnzymeMLDocument"
+  ],
+  "name": "20260520_100mM-HEPES_0.04_tmmcGAS",
+  "version": "2.1",
+  "creators": [],
+  "vessels": [
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "enzml:Vessel/unit",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "volume": "OBO:OBI_0002139",
+        "constant": "enzml:Vessel/constant"
+      },
+      "@id": "enzml:Vessel/3afa7fbf-c062-4064-8368-5454fcabea03",
+      "@type": [
+        "enzml:Vessel",
+        "OBO:OBI_0400081"
+      ],
+      "id": "v1",
+      "name": "Eppendorf Tube",
+      "volume": 1.0,
+      "unit": {
+        "id": "ml",
+        "name": "ml",
+        "base_units": [
+          {
+            "kind": "litre",
+            "exponent": 1,
+            "multiplier": 1.0,
+            "scale": -3.0
+          }
+        ]
+      },
+      "constant": true
+    }
+  ],
+  "proteins": [
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "constant": "enzml:Protein/constant",
+        "sequence": "OBO:GSSO_007262",
+        "vessel_id": "enzml:Protein/vessel_id",
+        "ecnumber": "enzml:Protein/ecnumber",
+        "organism": "OBO:OBI_0100026",
+        "organism_tax_id": "enzml:Protein/organism_tax_id",
+        "references": {
+          "@id": "schema:citation",
+          "@container": "@list"
+        }
+      },
+      "@id": "enzml:Protein/983d7036-b923-48f4-890f-1e53ff2a1ce8",
+      "@type": [
+        "enzml:Protein",
+        "OBO:PR_000000001"
+      ],
+      "id": "Q8N884",
+      "name": "thscGAS",
+      "constant": true,
+      "sequence": "MQPWHGKAMQRASEAGATAPKASARNARGAPMDPTESPAAPEAALPKAGKFGPARKSGSRQKKSAPDTQERPPVRATGARAKKAPQRAQDTQPSDATSAPGAEGLEPPAAREPALSRAGSCRQRGARCSTKPRPPPGPWDVPSPGLPVSAPILVRRDAAPGASKLRAVLEKLKLSRDDISTAAGMVKGVVDHLLLRLKCDSAFRGVGLLNTGSYYEHVKISAPNEFDVMFKLEVPRIQLEEYSNTRAYYFVKFKRNPKENPLSQFLEGEILSASKMLSKFRKIIKEEINDIKDTDVIMKRKRGGSPAVTLLISEKISVDITLALESKSSWPASTQEGLRIQNWLSAKVRKQLRLKPFYLVPKHAKEGNGFQEETWRLSFSHIEKEILNNHGKSKTCCENKEEKCCRKDCLKLMKYLLEQLKERFKDKKHLDKFSSYHVKTAFFHVCTQNPQDSQWDRKDLGLCFDNCVTYFLQCLRTEKLENYFIPEFNLFSSNLIDKRSKEFLTKQIEYERNNEFPVFDEF",
+      "organism": "Homo sapiens",
+      "organism_tax_id": "9606",
+      "references": []
+    },
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "constant": "enzml:Protein/constant",
+        "sequence": "OBO:GSSO_007262",
+        "vessel_id": "enzml:Protein/vessel_id",
+        "ecnumber": "enzml:Protein/ecnumber",
+        "organism": "OBO:OBI_0100026",
+        "organism_tax_id": "enzml:Protein/organism_tax_id",
+        "references": {
+          "@id": "schema:citation",
+          "@container": "@list"
+        }
+      },
+      "@id": "enzml:Protein/9696966e-c87e-49e4-9891-942df1e44c4f",
+      "@type": [
+        "enzml:Protein",
+        "OBO:PR_000000001"
+      ],
+      "id": "Q8C6L5",
+      "name": "tmmcGAS",
+      "constant": true,
+      "sequence": "MEDPRRRTTAPRAKKPSAKRAPTQPSRTRAHAESCGPQRGARSRRAERDGDTTEKPRAPGPRVHPARATELTKDAQPSAMDAAGATARPAVRVPQQQAILDPELPAVREPQPPADPEARKVVRGPSHRRGARSTGQPRAPRGSRKEPDKLKKVLDKLRLKRKDISEAAETVNKVVERLLRRMQKRESEFKGVEQLNTGSYYEHVKISAPNEFDVMFKLEVPRIELQEYYETGAFYLVKFKRIPRGNPLSHFLEGEVLSATKMLSKFRKIIKEEVKEIKDIDVSVEKEKPGSPAVTLLIRNPEEISVDIILALESKGSWPISTKEGLPIQGWLGTKVRTNLRREPFYLVPKNAKDGNSFQGETWRLSFSHTEKYILNNHGIEKTCCESSGAKCCRKECLKLMKYLLEQLKKEFQELDAFCSYHVKTAIFHMWTQDPQDSQWDPRNLSSCFDKLLAFFLECLRTEKLDHYFIPKFNLFSQELIDRKSKEFLSKKIEYERNNGFPIFDKL",
+      "organism": "Mus musculus",
+      "organism_tax_id": "10090",
+      "references": []
+    }
+  ],
+  "complexes": [],
+  "small_molecules": [
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "constant": "enzml:SmallMolecule/constant",
+        "vessel_id": "enzml:SmallMolecule/vessel_id",
+        "canonical_smiles": "enzml:SmallMolecule/canonical_smiles",
+        "inchi": "enzml:SmallMolecule/inchi",
+        "inchikey": "enzml:SmallMolecule/inchikey",
+        "synonymous_names": {
+          "@id": "enzml:SmallMolecule/synonymous_names",
+          "@container": "@list"
+        },
+        "references": {
+          "@id": "schema:citation",
+          "@container": "@list"
+        }
+      },
+      "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/6022",
+      "@type": [
+        "enzml:SmallMolecule"
+      ],
+      "id": "ADP",
+      "name": "ADP",
+      "constant": false,
+      "synonymous_names": [],
+      "references": []
+    },
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "constant": "enzml:SmallMolecule/constant",
+        "vessel_id": "enzml:SmallMolecule/vessel_id",
+        "canonical_smiles": "enzml:SmallMolecule/canonical_smiles",
+        "inchi": "enzml:SmallMolecule/inchi",
+        "inchikey": "enzml:SmallMolecule/inchikey",
+        "synonymous_names": {
+          "@id": "enzml:SmallMolecule/synonymous_names",
+          "@container": "@list"
+        },
+        "references": {
+          "@id": "schema:citation",
+          "@container": "@list"
+        }
+      },
+      "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/5957",
+      "@type": [
+        "enzml:SmallMolecule"
+      ],
+      "id": "ATP",
+      "name": "ATP",
+      "constant": false,
+      "synonymous_names": [],
+      "references": []
+    },
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "constant": "enzml:SmallMolecule/constant",
+        "vessel_id": "enzml:SmallMolecule/vessel_id",
+        "canonical_smiles": "enzml:SmallMolecule/canonical_smiles",
+        "inchi": "enzml:SmallMolecule/inchi",
+        "inchikey": "enzml:SmallMolecule/inchikey",
+        "synonymous_names": {
+          "@id": "enzml:SmallMolecule/synonymous_names",
+          "@container": "@list"
+        },
+        "references": {
+          "@id": "schema:citation",
+          "@container": "@list"
+        }
+      },
+      "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/135564529",
+      "@type": [
+        "enzml:SmallMolecule"
+      ],
+      "id": "cGAMP",
+      "name": "cGAMP",
+      "constant": false,
+      "synonymous_names": [],
+      "references": []
+    },
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "constant": "enzml:SmallMolecule/constant",
+        "vessel_id": "enzml:SmallMolecule/vessel_id",
+        "canonical_smiles": "enzml:SmallMolecule/canonical_smiles",
+        "inchi": "enzml:SmallMolecule/inchi",
+        "inchikey": "enzml:SmallMolecule/inchikey",
+        "synonymous_names": {
+          "@id": "enzml:SmallMolecule/synonymous_names",
+          "@container": "@list"
+        },
+        "references": {
+          "@id": "schema:citation",
+          "@container": "@list"
+        }
+      },
+      "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/135398619",
+      "@type": [
+        "enzml:SmallMolecule"
+      ],
+      "id": "GDP",
+      "name": "GDP",
+      "constant": false,
+      "synonymous_names": [],
+      "references": []
+    },
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "constant": "enzml:SmallMolecule/constant",
+        "vessel_id": "enzml:SmallMolecule/vessel_id",
+        "canonical_smiles": "enzml:SmallMolecule/canonical_smiles",
+        "inchi": "enzml:SmallMolecule/inchi",
+        "inchikey": "enzml:SmallMolecule/inchikey",
+        "synonymous_names": {
+          "@id": "enzml:SmallMolecule/synonymous_names",
+          "@container": "@list"
+        },
+        "references": {
+          "@id": "schema:citation",
+          "@container": "@list"
+        }
+      },
+      "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/135398635",
+      "@type": [
+        "enzml:SmallMolecule"
+      ],
+      "id": "GTP",
+      "name": "GTP",
+      "constant": false,
+      "synonymous_names": [],
+      "references": []
+    },
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "constant": "enzml:SmallMolecule/constant",
+        "vessel_id": "enzml:SmallMolecule/vessel_id",
+        "canonical_smiles": "enzml:SmallMolecule/canonical_smiles",
+        "inchi": "enzml:SmallMolecule/inchi",
+        "inchikey": "enzml:SmallMolecule/inchikey",
+        "synonymous_names": {
+          "@id": "enzml:SmallMolecule/synonymous_names",
+          "@container": "@list"
+        },
+        "references": {
+          "@id": "schema:citation",
+          "@container": "@list"
+        }
+      },
+      "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/23831",
+      "@type": [
+        "enzml:SmallMolecule"
+      ],
+      "id": "HEPES",
+      "name": "HEPES",
+      "constant": true,
+      "synonymous_names": [],
+      "references": []
+    },
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "constant": "enzml:SmallMolecule/constant",
+        "vessel_id": "enzml:SmallMolecule/vessel_id",
+        "canonical_smiles": "enzml:SmallMolecule/canonical_smiles",
+        "inchi": "enzml:SmallMolecule/inchi",
+        "inchikey": "enzml:SmallMolecule/inchikey",
+        "synonymous_names": {
+          "@id": "enzml:SmallMolecule/synonymous_names",
+          "@container": "@list"
+        },
+        "references": {
+          "@id": "schema:citation",
+          "@container": "@list"
+        }
+      },
+      "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/5360315",
+      "@type": [
+        "enzml:SmallMolecule"
+      ],
+      "id": "MgCl2",
+      "name": "Magnesium Chloride",
+      "constant": true,
+      "synonymous_names": [],
+      "references": []
+    },
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "schema:identifier",
+        "name": "schema:name",
+        "constant": "enzml:SmallMolecule/constant",
+        "vessel_id": "enzml:SmallMolecule/vessel_id",
+        "canonical_smiles": "enzml:SmallMolecule/canonical_smiles",
+        "inchi": "enzml:SmallMolecule/inchi",
+        "inchikey": "enzml:SmallMolecule/inchikey",
+        "synonymous_names": {
+          "@id": "enzml:SmallMolecule/synonymous_names",
+          "@container": "@list"
+        },
+        "references": {
+          "@id": "schema:citation",
+          "@container": "@list"
+        }
+      },
+      "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/11091",
+      "@type": [
+        "enzml:SmallMolecule"
+      ],
+      "id": "TrisHCl",
+      "name": "Tris HCl",
+      "constant": true,
+      "synonymous_names": [],
+      "references": []
+    }
+  ],
+  "reactions": [],
+  "measurements": [
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "MeasurementData": "http://www.enzymeml.org/v2/MeasurementData/",
+        "id": "schema:identifier",
+        "name": "enzml:Measurement/name",
+        "species_data": {
+          "@id": "enzml:Measurement/species_data",
+          "@container": "@list"
+        },
+        "group_id": "enzml:Measurement/group_id",
+        "ph": "enzml:Measurement/ph",
+        "temperature": "enzml:Measurement/temperature",
+        "temperature_unit": "enzml:Measurement/temperature_unit"
+      },
+      "@id": "enzml:Measurement/d4a5a944-1378-4617-a40c-febbefaf9f27",
+      "@type": [
+        "enzml:Measurement"
+      ],
+      "id": "20260520_100mM-HEPES_0.04_tmmcGAS_1",
+      "name": "20260520_100mM-HEPES_0.04_tmmcGAS_1",
+      "species_data": [
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/f35a51d8-309f-4685-87ab-eab447ec0165",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "Q8N884",
+          "prepared": 1e-08,
+          "initial": 1e-08,
+          "data_unit": {
+            "id": "umol / l",
+            "name": "umol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -6.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/ef92710d-d638-45fe-992b-f70ba4c347a5",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "Q8C6L5",
+          "prepared": 0.7151413298053028,
+          "initial": 0.7151413298053028,
+          "data_unit": {
+            "id": "umol / l",
+            "name": "umol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -6.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/330b9b2f-3dec-4f55-8c13-e6c0752f41cc",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "ADP",
+          "prepared": 0.0,
+          "initial": 0.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.0,
+            0.03961522034525593,
+            0.045999931625902934,
+            0.047565347806641525,
+            0.07255122613087517,
+            0.07843410810993298,
+            0.06574711432318668
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/6b83cef7-ffb5-4146-8126-79fdd8c1022b",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "ATP",
+          "prepared": 0.5,
+          "initial": 0.5511775786044322,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.5511775786044322,
+            0.458182931191407,
+            0.369285288941696,
+            0.28098146844867694,
+            0.238029548475411,
+            0.1889792120939457,
+            0.03931122986327019
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/4a13e79e-e1f5-459a-9fc9-ea192ae9e0e8",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "cGAMP",
+          "prepared": 0.0,
+          "initial": 0.0038969667901627256,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.0038969667901627256,
+            0.03614793560459628,
+            0.07217828342093865,
+            0.1509131702768401,
+            0.20609058793025412,
+            0.2735756763087694,
+            0.23354402973623725
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/53acf2c9-183f-4850-b01b-f73c47d940e0",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "GDP",
+          "prepared": 0.0,
+          "initial": 0.029219915724651678,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.029219915724651678,
+            0.03226981283778179,
+            0.028694486096461875,
+            0.02357626007850619,
+            0.019836192665215798,
+            0.0,
+            0.017843954515856034
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/4e09d36f-cd04-4972-81d9-ebf11b188685",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "GTP",
+          "prepared": 0.5,
+          "initial": 0.3096202828415455,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.3096202828415455,
+            0.16144911630524023,
+            0.3087099640295878,
+            0.22250819024556429,
+            0.11266401230466659,
+            0.0,
+            0.0
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/22e8ffd8-c35e-45a4-9d5c-86910267e66e",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "HEPES",
+          "prepared": 100.0,
+          "initial": 100.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/97be8ae9-d9da-4c04-a87c-0a33fd2d2b71",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "MgCl2",
+          "prepared": 10.0,
+          "initial": 10.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/f6875ce1-1569-4771-98e7-299804551712",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "TrisHCl",
+          "prepared": 0.0,
+          "initial": 0.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        }
+      ],
+      "group_id": "group_0",
+      "ph": 7.0,
+      "temperature": 37.0,
+      "temperature_unit": {
+        "id": "deg_C",
+        "name": "deg_C",
+        "base_units": [
+          {
+            "kind": "celsius",
+            "exponent": 1,
+            "multiplier": 1.0,
+            "scale": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "MeasurementData": "http://www.enzymeml.org/v2/MeasurementData/",
+        "id": "schema:identifier",
+        "name": "enzml:Measurement/name",
+        "species_data": {
+          "@id": "enzml:Measurement/species_data",
+          "@container": "@list"
+        },
+        "group_id": "enzml:Measurement/group_id",
+        "ph": "enzml:Measurement/ph",
+        "temperature": "enzml:Measurement/temperature",
+        "temperature_unit": "enzml:Measurement/temperature_unit"
+      },
+      "@id": "enzml:Measurement/1b14c77a-2b24-4173-a8e7-56012005e4d5",
+      "@type": [
+        "enzml:Measurement"
+      ],
+      "id": "20260520_100mM-HEPES_0.04_tmmcGAS_2",
+      "name": "20260520_100mM-HEPES_0.04_tmmcGAS_2",
+      "species_data": [
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/dc52440d-d4b6-439e-910a-6254865095a7",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "ADP",
+          "prepared": 0.0,
+          "initial": 0.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.0,
+            0.030612829307576084,
+            0.042093611301575934,
+            0.054214074677730595,
+            0.04774372026559634,
+            0.0562144274440517,
+            0.045390981444185116
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/c6a4526c-9ded-42e2-ac91-cd2c113a37e9",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "ATP",
+          "prepared": 0.5,
+          "initial": 0.4606222330040987,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.4606222330040987,
+            0.3536974383964483,
+            0.2840379022297625,
+            0.20975773466694614,
+            0.1679379787259298,
+            0.13017558292908277,
+            0.037835063615902914
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/28b9a074-6f30-4185-807f-52ef10ae8f04",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "cGAMP",
+          "prepared": 0.0,
+          "initial": 0.0031044847485313747,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.0031044847485313747,
+            0.03352093421777872,
+            0.06512522062657423,
+            0.13232134648904584,
+            0.19942815404501257,
+            0.24049744332786133,
+            0.17016167597095225
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/3367fc4a-b5c7-4ada-bfda-da5518b3decf",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "GDP",
+          "prepared": 0.0,
+          "initial": 0.034428643818214734,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.034428643818214734,
+            0.024949674111223473,
+            0.026333617541579403,
+            0.022040972414621253,
+            0.018130075039159737,
+            0.0,
+            0.015571989597903256
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/db2a7695-982c-42ce-a259-65948087b89e",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "GTP",
+          "prepared": 0.5,
+          "initial": 0.263589925675413,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.263589925675413,
+            0.1321873949970013,
+            0.2548558482468892,
+            0.1704016527419017,
+            0.06800496372353103,
+            0.0,
+            0.0
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/85efe52e-041b-4b71-8094-707980d4beef",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "HEPES",
+          "prepared": 100.0,
+          "initial": 100.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/67c016fd-f043-4fb2-bba3-d931a76b5fd8",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "MgCl2",
+          "prepared": 10.0,
+          "initial": 10.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/3f3ac79a-eca1-48aa-acf9-207409e933ef",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "TrisHCl",
+          "prepared": 0.0,
+          "initial": 0.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/0649a335-6f8c-43d4-9e4f-e3317b422713",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "Q8N884",
+          "prepared": 1e-08,
+          "initial": 1e-08,
+          "data_unit": {
+            "id": "umol / l",
+            "name": "umol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -6.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/4fcbe879-888e-49eb-88d1-0a71a29bf122",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "Q8C6L5",
+          "prepared": 0.7151413298053028,
+          "initial": 0.7151413298053028,
+          "data_unit": {
+            "id": "umol / l",
+            "name": "umol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -6.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        }
+      ],
+      "group_id": "group_0",
+      "ph": 7.0,
+      "temperature": 37.0,
+      "temperature_unit": {
+        "id": "deg_C",
+        "name": "deg_C",
+        "base_units": [
+          {
+            "kind": "celsius",
+            "exponent": 1,
+            "multiplier": 1.0,
+            "scale": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "@context": {
+        "@vocab": "http://www.enzymeml.org/v2/",
+        "enzml": "http://www.enzymeml.org/v2/",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "qudt": "http://qudt.org/schema/qudt#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "unit": "http://qudt.org/vocab/unit#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "MeasurementData": "http://www.enzymeml.org/v2/MeasurementData/",
+        "id": "schema:identifier",
+        "name": "enzml:Measurement/name",
+        "species_data": {
+          "@id": "enzml:Measurement/species_data",
+          "@container": "@list"
+        },
+        "group_id": "enzml:Measurement/group_id",
+        "ph": "enzml:Measurement/ph",
+        "temperature": "enzml:Measurement/temperature",
+        "temperature_unit": "enzml:Measurement/temperature_unit"
+      },
+      "@id": "enzml:Measurement/d9ca0e6f-e57a-42d5-8099-e082da648638",
+      "@type": [
+        "enzml:Measurement"
+      ],
+      "id": "20260520_100mM-HEPES_0.04_tmmcGAS_3",
+      "name": "20260520_100mM-HEPES_0.04_tmmcGAS_3",
+      "species_data": [
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/c614ad04-75d4-4dac-875f-5958b4b8ea9f",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "ADP",
+          "prepared": 0.0,
+          "initial": 0.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.0,
+            0.023159466100481026,
+            0.030946416244807755,
+            0.03875693834002435,
+            0.03350290146404491,
+            0.022569168929488043,
+            0.013689556586422555
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/2ccfdf40-99ab-4e16-85c7-e4532cc6f09a",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "ATP",
+          "prepared": 0.5,
+          "initial": 0.39240130774370474,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.39240130774370474,
+            0.26113038032131075,
+            0.19346227792253173,
+            0.11030618804454664,
+            0.061938911502955725,
+            0.009963820490852857,
+            0.0
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/74bd9a86-608d-4ef9-b61e-3e48003c7509",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "cGAMP",
+          "prepared": 0.0,
+          "initial": 0.0028008687855260507,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.0028008687855260507,
+            0.03260355927716625,
+            0.062275593468857124,
+            0.12763839589184342,
+            0.19925283138755964,
+            0.31099359172521324,
+            0.27457901237482274
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/9049b226-01de-46f0-99b5-f47824b4559d",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "GDP",
+          "prepared": 0.0,
+          "initial": 0.04518507049317781,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.04518507049317781,
+            0.03990715283970971,
+            0.04086692646350438,
+            0.04485528468472685,
+            0.039905934981669576,
+            0.036702714615695235,
+            0.027285881040793256
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/54687a50-1608-4e06-99a1-a0bdd7313530",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "GTP",
+          "prepared": 0.5,
+          "initial": 0.4852470073782544,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [
+            0.4852470073782544,
+            0.45670578188577804,
+            0.1759944284367826,
+            0.20438218866438376,
+            0.14402832341117608,
+            0.0629261044045481,
+            0.010180977582163677
+          ],
+          "time": [
+            0.0,
+            10.0,
+            20.0,
+            40.0,
+            60.0,
+            120.0,
+            1440.0
+          ],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/a0119b92-95f4-44fd-a3cb-af81e9f8bfc0",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "HEPES",
+          "prepared": 100.0,
+          "initial": 100.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/f50dc703-4cd2-4eca-927b-c9fa8e839e4f",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "MgCl2",
+          "prepared": 10.0,
+          "initial": 10.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/ad137b68-89f3-4cee-a95f-9c33695d39f3",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "TrisHCl",
+          "prepared": 0.0,
+          "initial": 0.0,
+          "data_unit": {
+            "id": "mmol / l",
+            "name": "mmol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -3.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/00bda587-acfb-4dff-83c4-3e4b52f66caf",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "Q8N884",
+          "prepared": 1e-08,
+          "initial": 1e-08,
+          "data_unit": {
+            "id": "umol / l",
+            "name": "umol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -6.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        },
+        {
+          "@context": {
+            "@vocab": "http://www.enzymeml.org/v2/",
+            "enzml": "http://www.enzymeml.org/v2/",
+            "OBO": "http://purl.obolibrary.org/obo/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "qudt": "http://qudt.org/schema/qudt#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "schema": "https://schema.org/",
+            "unit": "http://qudt.org/vocab/unit#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "DataTypes": "http://www.enzymeml.org/v2/DataTypes/",
+            "species_id": "enzml:MeasurementData/species_id",
+            "prepared": "enzml:MeasurementData/prepared",
+            "initial": "enzml:MeasurementData/initial",
+            "data_unit": "enzml:MeasurementData/data_unit",
+            "data": {
+              "@id": "enzml:MeasurementData/data",
+              "@container": "@list"
+            },
+            "time": {
+              "@id": "enzml:MeasurementData/time",
+              "@container": "@list"
+            },
+            "time_unit": "enzml:MeasurementData/time_unit",
+            "data_type": "enzml:MeasurementData/data_type",
+            "is_simulated": "enzml:MeasurementData/is_simulated"
+          },
+          "@id": "enzml:MeasurementData/c37e28af-492b-4b78-ae80-15c8eb0329cc",
+          "@type": [
+            "enzml:MeasurementData"
+          ],
+          "species_id": "Q8C6L5",
+          "prepared": 0.7151413298053028,
+          "initial": 0.7151413298053028,
+          "data_unit": {
+            "id": "umol / l",
+            "name": "umol / l",
+            "base_units": [
+              {
+                "kind": "mole",
+                "exponent": 1,
+                "multiplier": 1.0,
+                "scale": -6.0
+              },
+              {
+                "kind": "litre",
+                "exponent": -1,
+                "multiplier": 1.0,
+                "scale": 0.0
+              }
+            ]
+          },
+          "data": [],
+          "time": [],
+          "time_unit": {
+            "id": "min",
+            "name": "min",
+            "base_units": [
+              {
+                "kind": "second",
+                "exponent": 1,
+                "multiplier": 60.0,
+                "scale": 1.0
+              }
+            ]
+          },
+          "data_type": "concentration",
+          "is_simulated": false
+        }
+      ],
+      "group_id": "group_0",
+      "ph": 7.0,
+      "temperature": 37.0,
+      "temperature_unit": {
+        "id": "deg_C",
+        "name": "deg_C",
+        "base_units": [
+          {
+            "kind": "celsius",
+            "exponent": 1,
+            "multiplier": 1.0,
+            "scale": 0.0
+          }
+        ]
+      }
+    }
+  ],
+  "equations": [],
+  "parameters": [],
+  "references": []
+}
