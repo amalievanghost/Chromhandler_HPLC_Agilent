@@ -38,27 +38,27 @@ One row per **condition**, not per replicate. Replicates `_1`, `_2`, `_3` automa
 
 Put the exported Agilent reports of one experiment in `Raw-data/<experiment_name>/`.
 
-**Naming**
-
-```
-Raw-data/
-└── YYYYMMDD_conditions/                      # folder = experiment_name
-    ├── YYYYMMDD_1_conditions_0_min.txt       # replicate 1
-    ├── YYYYMMDD_1_conditions_10_min.txt
-    ├── ...
-    ├── YYYYMMDD_2_conditions_0_min.txt       # replicate 2
-    ├── YYYYMMDD_3_conditions_0_min.txt       # replicate 3
-    ├── ...
-    └── YYYYMMDD_NEG_conditions_1440_min.txt  # negative control
-```
-
-Example: `20260520_1_100mM-HEPES_0.04_tmmcGAS_10_min.txt`
-
-- `YYYYMMDD`: date of the experiment. Optional in the file names, but always 8 digits if present. In the folder name, YYYYMMDD makes experiments sort chronologically.
-- `1`, `2`, `3`: replicate number. It decides which replicate folder the file is sorted into.
-- `NEG`: negative control. It is not sorted and stays in `Raw-data`.
-- `conditions`: free text describing the reaction, e.g. `100mM-HEPES_0.04_tmmcGAS`. It is only a label; the values used in the analysis come from `metadata.xlsx`.
-- `<time>_min`: reaction time at sampling. chromhandler reads the time from here, so it must be the **last number before `_min`**.
+>[!IMPORTANT] **Naming**
+>
+>```
+>Raw-data/
+>└── YYYYMMDD_conditions/                      # folder = experiment_name
+>    ├── YYYYMMDD_1_conditions_0_min.txt       # replicate 1
+>    ├── YYYYMMDD_1_conditions_10_min.txt
+>    ├── ...
+>    ├── YYYYMMDD_2_conditions_0_min.txt       # replicate 2
+>    ├── YYYYMMDD_3_conditions_0_min.txt       # replicate 3
+>    ├── ...
+>    └── YYYYMMDD_NEG_conditions_1440_min.txt  # negative control
+>```
+>
+>Example: `20260520_1_100mM-HEPES_0.04_tmmcGAS_10_min.txt`
+>
+>- `YYYYMMDD`: date of the experiment. Optional in the file names, but always 8 digits if present. In the folder name, >YYYYMMDD makes experiments sort chronologically.
+>- `1`, `2`, `3`: replicate number. It decides which replicate folder the file is sorted into.
+>- `NEG`: negative control. It is not sorted and stays in `Raw-data`.
+>- `conditions`: free text describing the reaction, e.g. `100mM-HEPES_0.04_tmmcGAS`. It is only a label; the values used in >the analysis come from `metadata.xlsx`.
+>- `<time>_min`: reaction time at sampling. chromhandler reads the time from here, so it must be the **last number before >`_min`**.
 
 Set `SOURCE_PATH` to that folder and run the notebook. It copies the files into
 
