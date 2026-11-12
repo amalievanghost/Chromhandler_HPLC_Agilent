@@ -38,7 +38,8 @@ One row per **condition**, not per replicate. Replicates `_1`, `_2`, `_3` automa
 
 Put the exported Agilent reports of one experiment in `Raw-data/<experiment_name>/`.
 
->[!IMPORTANT] **Naming**
+>[!IMPORTANT]
+>**Naming**
 >
 >```
 >Raw-data/
